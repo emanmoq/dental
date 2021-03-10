@@ -1,0 +1,345 @@
+@font-face{
+    font-family:"JFFlatRegular";
+    src:url("../fonts/JFFlatRegular.ttf");
+}
+:root{
+    --main-color:#2C2C49;
+    --font-famiy:"JFFlatRegular";
+    --sub-font-color:#474747;
+
+}
+img{
+    width:100%;
+}
+form{
+    margin:0;
+}
+a{
+ text-decoration: none;   
+}
+a:hover{
+    color:black
+}
+
+.mainBtn{
+    line-height: 32px;
+    height:60px;;
+    width:200px;
+    border-radius:36px;
+    border:1px solid transparent;
+    transition: all .5s;
+    font-size:1.4em;
+    color:white;
+}
+.mainBtn:hover{
+    background-color: transparent;;
+    color:var(--main-color);
+    transition: all .5s;;
+    border:1px solid var(--main-color);
+}
+
+p{
+    font-size:1.25em;
+    color:var(--sub-font-color)
+
+}
+header{
+    width:100%;
+    padding-top:50px;
+    z-index: 9999999;
+}
+ul{
+    padding:0;
+    margin:0;
+}
+a:hover{
+    text-decoration: none;
+}
+ul li{
+    list-style-type: none;
+}
+.btn:focus{
+box-shadow: none;
+outline: 0;;
+}
+body{
+     font-size: 16px;
+    background-color: #fff;
+    position: relative;
+    direction: rtl;
+    text-align: right;
+    font-family:var(--font-famiy);
+    color:var(--font-color);
+overflow-x: hidden;
+}
+.hero{
+    padding-top:70px;
+}
+.btns{
+    margin-top: 30px;;
+}
+.mainBtn.heroBtn{
+    background-color: #CB4949;
+    border:1px solid #CB4949;
+    line-height: 40px;
+}
+.mainBtn.heroBtn:hover{
+    background-color: white;
+    color:#CB4949
+}
+.mainBtn.freeBtn{
+    background-color: white;
+    border:1px solid var(--main-color);
+    color:var(--main-color);
+    width:180px;
+    line-height: 40px;
+    margin-right:20px;
+}
+.mainBtn.freeBtn:hover{
+    background-color: var(--main-color);
+    color:white;
+}
+.heroImg{
+    width:100%;
+    overflow: hidden;
+}
+.navbar-brand.logo{
+ width:150px;
+ margin-right:0;
+}
+
+.heroText h5{
+    font-size :3em;
+   color:var(--main-color);
+    margin-bottom: 25px;
+}
+.subscribeBox {
+    width:500px;
+    height:55px;
+    position: relative;
+}
+.subscribeBtn{
+    height:55px;
+    border-radius: 36px;
+    position: absolute;
+    left:0;
+    top:0;
+    background-color: var(--main-color);
+}
+.subscribeBox .form-group {
+    display: inline-block;
+    margin:0;
+    width:100%;
+    position: relative;
+}
+.subscribeBtn:hover{
+    background-color: white;;
+}
+.subscribeBox .form-control{
+    width:100%;
+    height:55px;
+    border:0;
+    border-radius: 36px;
+    background-color: rgba(44, 44, 73, .1);
+}
+.subscribeForm{
+    margin:0;
+}
+footer{
+    padding:60px 0 20px;
+}
+.socialIcons li{
+    display: inline-block;
+    width:34px;
+    height:34px;
+    border-radius: 50%;
+    background-color:var(--main-color);
+    border:1px solid transparent;
+    margin-left:15px;
+    text-align: center;
+    transition: all .5s;
+    border:1px solid var(--main-color)
+}
+.socialIcons li a{
+    color:white;
+line-height: 20px;
+font-size:18px;
+}
+.socialIcons li i{
+    line-height: 33px;;
+}
+.socialIcons li:hover{
+    background-color: white;
+    transition: all .5s;
+}
+ .socialIcons li:hover i{
+    color:var(--main-color);
+}
+.copyRight h3{
+    font-size:1em;
+    color:var(--sub-font-color);
+    text-align: left;
+}
+.form-control:focus{
+    outline: 0;
+    box-shadow: none;
+}
+.modal{
+    z-index: 999999999999;
+}
+.modal-dialog{
+    max-width:85%;
+}
+.contactForm .form-group{
+    position: relative;
+}
+.modal-content{
+    border-radius: 15px;
+    padding:60px;
+    text-align: center;
+}
+
+.form-group i{
+    position: absolute;
+    left: 4%;
+    top: 29%;
+    font-size:18px;
+    color:var(--main-color);
+}
+.contactForm .form-group.halfFormGroup{
+    width:48%;
+    display: inline-block;
+}
+.contactForm .form-group.marginGroup{
+    margin-right:40px;
+}
+.contactForm .form-control{
+    background-color:transparent;
+    border-radius: 0;
+    height:60px;
+    font-size: 1.1em;
+    border:0;
+    border-radius: 36px;
+    text-align: right;
+    background-color: rgba(44, 44, 73, .1);
+    padding-right:10px;
+
+}
+.form-control::-webkit-calendar-picker-indicator {
+display: none !important;
+}
+.contactForm .form-control::placeholder{
+    font-size: 1.1em;
+    color:#2C2C49;
+    padding-right:10px;
+    opacity: .44;;
+}
+.contactForm textarea.form-control{
+    height:120px;
+    resize: none;
+}
+.sendBtn{
+width:320px;
+margin-top:30px;
+background-color: var(--main-color);
+float: left;
+}
+.contactForm h5{
+    font-size:  2.1em;
+    color: var(--main-color);
+}
+.contactForm p{
+margin-bottom: 50px;;
+}
+@media(min-width:300px) and (max-width:767px){
+
+    .navbar-expand-lg .navbar-nav{
+        width:100%;
+    }
+    body{
+        font-size:12px
+    }
+
+.navbar-brand.logo{
+    margin-left:0;
+    color:var(--main-color)
+}
+
+header{
+    padding-top:10px;;
+}
+.socialIcons li{
+        float: none;
+}
+.hero{
+    padding-top:30px;
+}
+.aboutImg{
+    height: auto;
+    margin: 10px auto;
+}
+.heroImg{
+    width:100%;
+    height:auto;
+    margin:20px auto;
+}
+.mainBtn.freeBtn,.mainBtn.heroBtn{
+    width:44%
+}
+.subscribeBox{
+    width:100%;
+    margin-top:20px;
+    margin-bottom: 20px;;
+}
+.subscribeBox .mainBtn{
+    width:100px;
+}
+.modal-dialog{
+    max-width: 100%;;
+}
+.modal-content{
+    padding:10px;
+}
+.contactForm .form-group.halfFormGroup {
+    width:100%;
+}
+.contactForm .form-group.marginGroup{
+    margin-RIGHT:0;
+}
+}
+@media(min-width:768px) and (max-width:1023px){
+
+    body{
+        font-size:14px
+    }  
+    .heroText{
+        margin-top: 20px;
+    }
+    .subscribeBox{
+        width:46%;
+    }
+    .heroSection{
+        padding-top: 50px;;
+    }
+    .subscribeBox .mainBtn{
+        width:30%;
+    }
+.contactForm .form-group.halfFormGroup {
+    width: 46.8%;}
+  .mainBtn.freeBtn,.mainBtn.heroBtn{
+      WIDTH:47%;
+  }
+  .mainBtn.freeBtn{
+      margin-right:10px;
+  }
+
+.hero{
+    padding-bottom:150px;
+}
+}
+@media(min-width:1023px) and (max-width :1200px) {
+
+    .hero{
+        padding-bottom:200px;
+    }
+}
