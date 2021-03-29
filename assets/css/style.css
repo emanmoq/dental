@@ -113,10 +113,12 @@ overflow-x: hidden;
    color:var(--main-color);
     margin-bottom: 25px;
 }
-.subscribeBox {
-    width:500px;
-    height:55px;
-    position: relative;
+.subscribeForm {
+   
+}
+.subscribeBox .gfield_label{
+    position: absolute;
+    display: none;
 }
 .subscribeBtn{
     height:55px;
@@ -130,7 +132,7 @@ overflow-x: hidden;
     display: inline-block;
     margin:0;
     width:100%;
-    position: relative;
+    margin-bottom: 0;
 }
 .subscribeBtn:hover{
     background-color: white;;
@@ -144,6 +146,9 @@ overflow-x: hidden;
 }
 .subscribeForm{
     margin:0;
+    width:500px;
+    height:55px;
+    position: relative;
 }
 footer{
     padding:60px 0 20px;
@@ -192,6 +197,10 @@ font-size:18px;
 }
 .contactForm .form-group{
     position: relative;
+}
+.contactForm .gfield_label{
+    position: absolute;
+    display: none;
 }
 .modal-content{
     border-radius: 15px;
